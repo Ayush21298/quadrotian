@@ -51,9 +51,11 @@
 
   <div id="summernote"><p></p></div>
   <script>
-    $(document).ready(function() {
+   $(document).ready(function() {
         $('#summernote').summernote({
-	height:200,
+	minHeight:160,
+    focus: true,
+    disableResizeEditor: true,
   toolbar: [
     // [groupName, [list of button]]
     ['style', ['bold', 'italic', 'underline']],
@@ -63,6 +65,8 @@
 
 });
     });
+
+
   </script>
 
 
