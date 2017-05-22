@@ -6009,11 +6009,6 @@
           $linkText.off('input paste keypress');
           $linkUrl.off('input paste keypress');
           $linkBtn.off('click');
-          // Here the fix :
-          if(options.dialogsInBody){
-            $('body').addClass('modal-open');
-          }       
-
 
           if (deferred.state() === 'pending') {
             deferred.reject();
@@ -6214,10 +6209,6 @@
           $imageInput.off('change');
           $imageUrl.off('keyup paste keypress');
           $imageBtn.off('click');
-          // Here the fix :
-          if(options.dialogsInBody){
-            $('body').addClass('modal-open');
-          }       
 
           if (deferred.state() === 'pending') {
             deferred.reject();
@@ -6436,10 +6427,6 @@
         ui.onDialogHidden(self.$dialog, function () {
           $videoUrl.off('input');
           $videoBtn.off('click');
-          // Here the fix :
-          if(options.dialogsInBody){
-            $('body').addClass('modal-open');
-          }       
 
           if (deferred.state() === 'pending') {
             deferred.reject();

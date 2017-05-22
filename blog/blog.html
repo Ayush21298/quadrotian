@@ -13,8 +13,55 @@
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
   <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.css" rel="stylesheet">
   <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.js"></script>
+
+<style>
+.btn1 {
+  display:block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 0px;
+  font-size:50px;
+  text-align:center;
+  position: fixed;
+  bottom: 20px;
+  cursor:pointer;
+  opacity:0.5;
+  line-height:55px;
+  text-decoration: none;
+}
+.btn1:hover {
+  opacity:1.0;
+  
+}
+
+</style>
+
+<script>
+
+$("#main").click(function() {
+  $("#mini-fab").toggleClass('hidden');
+});
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();  
+});
+$.material.init();
+
+</script>
+
+
 </head>
 <body background='2.jpg'>
+
+
+
+
+<button class="btn1" style="  background: radial-gradient(black,white);  color:white;     right: 120px; " title="New Blog" data-toggle="modal" data-target="#myModal">+</button><br><br>
+<button class="btn1" style="  background: radial-gradient(white,black);  color:black;     right: 20px; " title="New Blog" data-toggle="modal" data-target="#myModal">+</button>
+
+
+
 
 <div class="container">
   <h1><font color='#FFFFFF'>Quadrotian</font></h1>
@@ -94,6 +141,9 @@
 </select>
  
       <button type="button" class="btn btn-link" style="font-size:30px;">&#10004;</button>
+
+
+
 
   </div>
 
